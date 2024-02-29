@@ -1,0 +1,21 @@
+name: Using Self Hosted Runners
+
+on:
+  push:
+    branches: none 
+  pull_request:
+    branches: none
+
+jobs:
+  build :
+
+    runs-on: SahishnuRunner 
+
+    steps:
+    - uses: actions/checkout@v3
+   
+    - name: single line
+      run: echo "Hello World!"
+    - name: multi lines
+      run: echo "add other actions to build"  
+ 
